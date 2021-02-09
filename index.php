@@ -1,1 +1,4 @@
-"hello world" 
+<?php
+
+echo "yes";
+?>
