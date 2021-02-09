@@ -52,8 +52,16 @@ body {
 
     display: flex;
 
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap:  wrap;
+
     align-items: center;
+
+    justify-content: center;
+
+    width: 900px;
+
+    padding-bottom: 50px;
 }
 
 .repo {
@@ -77,6 +85,8 @@ body {
 
     color: #000;
     text-decoration: none;
+    
+    margin: 25px;
 }
 
 .repo:hover {
@@ -118,5 +128,14 @@ body {
 @media only screen and (max-width: 600px) {
     .repo {
         width: 87%;
+        margin: 25px 0;
+    }
+
+    
+    .repos {
+        flex-direction: column;
+        flex-wrap:  wrap;
+        align-items: center;
+        width: 90%;
     }
 }
