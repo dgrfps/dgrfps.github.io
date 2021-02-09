@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oxygen', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+
+    height: 100vh;
+
+    cursor: default;
+
+    user-select: none;
+}
+
+.profile img {
+    transition: .5s ease;
+
+    border-radius: 100%;
+
+    width: 250px;
+
+    margin-bottom: 20px;
+}
+
+.profile img:hover {
+    border-radius: 2%;
+    transform: scale(1.2);
+}
+
+.profile {
+    margin-top: 75px;
+
+    font-size: 2.5rem;
+
+    width: min-content;
+
+    text-align: center;
+}
+
+.repos {
+    margin-top: 50px;
+
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.repo {
+    margin: 20px 0;
+
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+    width: 350px;
+    height: 160px;
+    
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    font-size: 1.22rem;
+
+    padding: 17px;
+
+    color: #000;
+    text-decoration: none;
+}
+
+.repo:hover {
+    box-shadow: rgba(0, 0, 0, 0.111) 0px 1px 3px 0px, rgba(27, 31, 35, 0.337) 0px 0px 0px 1px;
+}
+
+.repo .data {
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: left;
+}
+
+.repo .title {
+    margin-top: 5px;
+
+    display: flex;
+
+    flex-wrap: nowrap;
+    align-items: center;
+
+    font-weight: bold;
+    font-size: 1.42rem;
+
+    margin-bottom: 15px;
+}
+
+.repo .desc {
+    margin-left: 15px;
+}
+
+.repo .url {
+    text-align: center;
+    font-size: 1rem;
+    word-wrap: break-word;
+}
+
+@media only screen and (max-width: 600px) {
+    .repo {
+        width: 87%;
+    }
+}
